@@ -1,21 +1,20 @@
-# Ma Collection - Benjamin
+# Ma Collection - Benjamin — v1.1
 
-PWA statique pour gérer une collection de monnaies, pièces commémoratives, médailles et souvenirs.
+PWA statique pour gérer une collection de monnaies, pièces commémoratives, médailles, souvenirs et coffrets.
 
-## Publication GitHub Pages
-1. Créer un dépôt GitHub, par exemple `ma-collection`.
-2. Envoyer à la racine du dépôt : `index.html`, `manifest.webmanifest`, `sw.js` et le dossier `icons`.
-3. Dans GitHub : Settings > Pages > Deploy from a branch > `main` > `/(root)`.
-4. L'application sera disponible à une adresse du type : `https://UTILISATEUR.github.io/ma-collection/`.
+## Nouveautés v1.1
+- Échelle d'état : Circulée, TB, TTB, SUP, UNC/FDC, BE/Proof avec explication.
+- Type `Coffret`.
+- Nombre de pièces et référence du coffret.
+- Une pièce peut être rattachée à un coffret.
+- Depuis la fiche d'un coffret, bouton pour ajouter directement une pièce dedans.
+- Statistiques séparées pour les fiches, pièces et coffrets.
 
-## Installation iPhone
-Ouvrir l'adresse dans Safari > Partager > Ajouter à l'écran d'accueil.
+## Mise à jour GitHub Pages
+Remplacer `index.html`, `sw.js`, `manifest.webmanifest`, le dossier `icons` et éventuellement ce README à la racine du dépôt. Les données déjà présentes sur l'iPhone restent dans IndexedDB.
 
 ## Données
 Les fiches et photos sont stockées localement dans IndexedDB sur l'appareil. GitHub n'héberge pas la collection.
 
 ## Sauvegarde
-Réglages > Sauvegarde JSON. Le fichier JSON contient aussi les photos et permet une restauration complète.
-
-## Mise à jour
-Remplacer les fichiers du dépôt. Lors d'une future version, modifier le nom du cache dans `sw.js` (`ma-collection-v2`, etc.) pour forcer le renouvellement des fichiers hors ligne.
+Réglages > Sauvegarde JSON. Le fichier JSON contient aussi les photos et les liens entre coffrets et pièces.
