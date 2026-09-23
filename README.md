@@ -18,3 +18,8 @@ Les fiches et photos sont stockées localement dans IndexedDB sur l'appareil. Gi
 
 ## Sauvegarde
 Réglages > Sauvegarde JSON. Le fichier JSON contient aussi les photos et les liens entre coffrets et pièces.
+
+## v1.2
+- Recadrage des photos après prise de vue.
+- Une photo existante peut être recadrée sans devoir la reprendre.
+- Bouton séparé « Nouvelle photo » pour remplacer l’image.
